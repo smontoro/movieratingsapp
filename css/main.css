@@ -1,0 +1,92 @@
+/* ===== HEADER ====== */
+#menu-button {
+	position: fixed;
+	padding: 5px 10px;
+	background-color: white;
+	border-radius: 5px;
+	top: 15px;
+	left: 15px;
+	z-index: 999;
+	transition: 0.3s ease;
+}
+
+#menu-button.menu-open {
+	background-color: initial;
+	border: 3px solid white;
+}
+
+.hidden {
+	display: none;
+}
+
+#menu {
+	position: fixed;
+	z-index: 998;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: tomato;
+	transform-origin: left;
+	transition: 0.5s ease;
+}
+
+
+#menu ul {
+	list-style-type: none;
+}
+
+#menu ul li {
+	padding: 5px;
+	font-size: 1.35rem;
+	color: white;
+	color: white;
+	text-align: center;
+}
+
+#menu.menu-collapsed{
+	width: 0;
+}
+
+
+
+
+
+/* ====== BODY ========= */
+body {
+	background-color: teal;
+	color: white;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+
+#main {
+	text-align: center;
+	width: 100%;
+	height: 300px;
+}
+
+input {
+	padding: 10px;
+	width: 200px;
+}
+
+select {
+    height: 38px;
+    width: 100px;
+}
+
+.title, .rating {
+	border: 2px solid black;
+	display: inline;
+	font-size: 75px;
+	padding: 5%;
+}
+
+#post {
+	text-align: center;
+}
